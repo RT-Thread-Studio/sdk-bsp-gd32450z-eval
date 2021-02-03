@@ -1,0 +1,81 @@
+board:
+  buy_url_cn: https://detail.tmall.com/item.htm?id=576899118355
+  buy_url_global: https://www.tme.eu/en/details/gd32450z-eval/development-kits-others/gigadevice
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: GD32450Z-EVAL uses GD32F450ZKT6 as the main controller. It uses Mini USB interface or DC-005 connector to supply 5V power. SWD, Reset, Boot, User button key,LED, CAN, I2C, I2S, USART, RTC, LCD, SPI, ADC, DAC, EXMC, CTC, SDIO, ENET, USBFS, USBHS, GD-Link and Extension Pins are also included.
+  description_zh: GD32450Z-EVAL使用GD32F450ZKT6作为主控制器。它使用Mini USB 接口或DC-005连接器提供5V电源。 还包括 SWD，重置，引导，用户按钮键，LED，CAN，I2C，I2S，USART，RTC，LCD，SPI，ADC，DAC，EXMC，CTC，SDIO，ENET，USBFS，USBHS，GD-Link和扩展引脚。
+  emulator_machine: ''
+  large_image: documents/images/GD32450Z_EVAL_large.png
+  name: GD32F303Z-GD-EVAL
+  price_cn: 369 CNY
+  price_global: 125 USD
+  sale_contact_cn: https://detail.tmall.com/item.htm?id=576899118355
+  sale_contact_global: https://www.tme.eu/en/details/gd32450z-eval/development-kits-others/gigadevice
+  small_image: documents/images/GD32450Z_EVAL_small.png
+  vendor: GigaDevice
+  version: 1.0.0
+chip:
+  chip_name: GD32F450ZKT6
+  clock_source: HSE
+  device_vendor: GigaDevice
+  family_name: GD32
+  rx_name: PA10
+  series_name: GD32F4
+  source_freq: '8000000'
+  sub_series_name: GD32F450
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/GD32450Z-EVAL_User_Manual-V1.0.pdf
+  title: GD32450Z-EVAL-User-Manual
+- category: sheet
+  file: documents/GD32F450xx_Datasheet_Rev2.0.pdf
+  title: GD32F450xx-Datasheet
+example_projects: []
+features:
+- GD32F450ZKT6 MCU
+- User LED’s
+- Push Button
+- 1x USART
+- 16Mbit SPI and QSPI NOR Flash
+- Micro SD Card Interface
+features_zh:
+- GD32F450ZKT6 MCU
+- User LED’s
+- Push Button
+- 1x USART
+- 16Mbit SPI and QSPI NOR Flash
+- Micro SD Card Interface
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - "*"
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: gd32450z
+  project_name: gd32450z
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
