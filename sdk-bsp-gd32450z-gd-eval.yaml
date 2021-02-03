@@ -7,7 +7,7 @@ board:
   description_zh: GD32450Z-EVAL使用GD32F450ZKT6作为主控制器。它使用Mini USB 接口或DC-005连接器提供5V电源。 还包括 SWD，重置，引导，用户按钮键，LED，CAN，I2C，I2S，USART，RTC，LCD，SPI，ADC，DAC，EXMC，CTC，SDIO，ENET，USBFS，USBHS，GD-Link和扩展引脚。
   emulator_machine: ''
   large_image: documents/images/GD32450Z_EVAL_large.png
-  name: GD32F303Z-GD-EVAL
+  name: GD32F450Z-GD-EVAL
   price_cn: 369 CNY
   price_global: 125 USD
   sale_contact_cn: https://detail.tmall.com/item.htm?id=576899118355
