@@ -3,8 +3,12 @@ board:
   buy_url_global: https://www.tme.eu/en/details/gd32450z-eval/development-kits-others/gigadevice
   debug_interface: SWD
   debugger: J-Link
-  description_en: GD32450Z-EVAL uses GD32F450ZKT6 as the main controller. It uses Mini USB interface or DC-005 connector to supply 5V power. SWD, Reset, Boot, User button key,LED, CAN, I2C, I2S, USART, RTC, LCD, SPI, ADC, DAC, EXMC, CTC, SDIO, ENET, USBFS, USBHS, GD-Link and Extension Pins are also included.
-  description_zh: GD32450Z-EVAL使用GD32F450ZKT6作为主控制器。它使用Mini USB 接口或DC-005连接器提供5V电源。 还包括 SWD，重置，引导，用户按钮键，LED，CAN，I2C，I2S，USART，RTC，LCD，SPI，ADC，DAC，EXMC，CTC，SDIO，ENET，USBFS，USBHS，GD-Link和扩展引脚。
+  description_en: GD32450Z-EVAL uses GD32F450ZKT6 as the main controller. It uses
+    Mini USB interface or DC-005 connector to supply 5V power. SWD, Reset, Boot, User
+    button key,LED, CAN, I2C, I2S, USART, RTC, LCD, SPI, ADC, DAC, EXMC, CTC, SDIO,
+    ENET, USBFS, USBHS, GD-Link and Extension Pins are also included.
+  description_zh: GD32450Z-EVAL使用GD32F450ZKT6作为主控制器。它使用Mini USB 接口或DC-005连接器提供5V电源。
+    还包括 SWD，重置，引导，用户按钮键，LED，CAN，I2C，I2S，USART，RTC，LCD，SPI，ADC，DAC，EXMC，CTC，SDIO，ENET，USBFS，USBHS，GD-Link和扩展引脚。
   emulator_machine: ''
   large_image: documents/images/GD32450Z_EVAL_large.png
   name: GD32F450Z-GD-EVAL
@@ -51,11 +55,36 @@ features_zh:
 - Micro SD Card Interface
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.0
+pkg_version: 1.0.1
 template_projects:
 - builtin_files:
   - files_and_folders:
-    - "*"
+    - '*'
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 4.1.0
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: gd32450z
+  project_name: gd32450z
+  project_type: rt-thread|@full|@4.1.0
+- builtin_files:
+  - files_and_folders:
+    - '*'
     source_path_offset: project_0
     target_path_offset: ''
   external_files:
